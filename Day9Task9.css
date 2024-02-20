@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background: linear-gradient(143.3deg, rgb(216, 27, 96) 33.1%, rgb(237, 107, 154) 74.9%);
+}
+header {
+    background: linear-gradient(109.5deg, rgb(13, 11, 136) 9.4%, rgb(86, 255, 248) 78.4%);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+label{
+    font-weight: bold;
+}
+
+#event-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.event-card {
+    background: linear-gradient(110.1deg, rgb(34, 126, 34) 2.9%, rgb(168, 251, 60) 90.3%);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#event-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#event-form input,
+#event-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.container{
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+}
+input[type="text"] {
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #080808;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+
+footer {
+    background: linear-gradient(109.5deg, rgb(13, 11, 136) 9.4%, rgb(86, 255, 248) 78.4%);
+    color: #0b0b0b;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}

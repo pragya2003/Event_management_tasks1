@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="Day9Task9.css">
+</head>
+<body>
+    <header>
+        <h1>Event Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Add Event</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="event-listing">
+        <h2><u>Upcoming Events</u></h2>
+        <div id="event-cards">
+            <!-- Event Cards will be dynamically generated here -->
+        </div>
+    </section>
+
+    <section id="add-event-form">
+        <h2><u>Add New Event</u></h2>
+        <form id="event-form">
+            <label for="title">Event Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button  type="submit">Add Event</button>
+        </form>
+    </section>
+
+    <div class="container">
+        <h2><u>Search Events</u></h2>
+        <input type="text" id="searchInput" placeholder="Search by title, date, or location">
+        <button onclick="searchEvents()">Search</button>
+        <div id="searchResults"></div>
+      </div>
+      
+    <footer>
+        <p>&copy; VSK Event Management System. All Rights Reserved</p>
+    </footer>
+
+    <script src="Day9Task9.js"></script>
+</body>
+</html>
